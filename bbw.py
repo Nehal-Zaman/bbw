@@ -81,7 +81,7 @@ def getLatestWriteups():
 
 def cron():
 	while True:
-		time.sleep(60)
+		time.sleep(3600)
 		latestWriteups = getLatestWriteups()
 		if latestWriteups != None and len(latestWriteups) > 0:
 			print("------------------------------")
